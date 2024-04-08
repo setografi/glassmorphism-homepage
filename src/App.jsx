@@ -1,13 +1,17 @@
 import React from "react";
 import "./App.css";
+import BackgroundImage from "../src/assets/Background.png";
 import HomePage from "./layouts/HomePage";
-import HeaderEvent from "./componets/HeaderEvent";
 
 function App() {
   return (
     <>
-      <HeaderEvent />
-      <HomePage />
+      <div
+        className="bg-cover bg-center h-screen"
+        style={{ backgroundImage: `url(${BackgroundImage})` }}
+      >
+        <HomePage />
+      </div>
     </>
   );
 }
